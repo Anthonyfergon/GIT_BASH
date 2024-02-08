@@ -1,0 +1,78 @@
+# _____________________________________________________________________
+#                   POWERSHELL - COMMAND PROMPT - BASH
+#               Prepared by AnthonyCRENG28, Rabbit industries.
+# _____________________________________________________________________
+
+Geek for Geeks	https://www.geeksforgeeks.org/basic-shell-commands-in-linux/
+RadioTelescope	https://lweb.cfa.harvard.edu/rtdc/shell_cmds/basic/
+
+UBUNTU
+username: anthony
+pwd: postgresql
+
+#### 01 - TERMINOLOGY
+
+# Powershell: Interfaz de línea de comandos estándar de computadoras con Windows, funge como broker entre la ejecucion de comandos que son interpretados por el lenguaje BASH.
+
+POWERSHELL_COMMANDS
+
+BASIC NAVIGATION COMMANDS:
+
+# sl ~
+c:/
+
+# ls, ls - l, dir, gci (Get ChildItem)
+ls
+ls -l
+ls -la   # displays hidden files
+ls -l /opt/ /Users     # esto para obtener el contenido de 2 directorios al mismo tiempo
+
+# cd, sl (Set Location)
+cd\							# base
+cd ..						# directorio anterior
+cd -						# volver al directorio anterior
+cd ...						# directorio transanterior, etc4
+
+# DML COMMANDS:
+echo $SHELL 				# displays the type of bash we are currently using
+mkdir test					# crear un directorio
+cd tests				 	# navegar a un directorio
+hello matrix > test.txt	 	# crear un archivo no oculto
+ls -l						# ver archivo 
+rabbit .hiden            	# como crear un archivo oculto
+ls -la			sort			# ver archivo oculto
+vim hello.txt			 	# editar un directorio e.g.: ingresar valores: apple, apricot, cinnamon, grapes
+ESC y lugo :wq para salir 	# salir del editor
+cat hello.txt			 	# consult content de un file
+sort < *.txt				# consult the content alphabetically
+chmod u=rw,go=rw test.txt 	# define permissions
+file hello.txt				# displays the file type
+pwd							# print working directory
+/bin/ls						# displays files
+cd /var/log/				# log files
+ls -l						# consultar archivos del log file
+ls -l *.log					# consultar unicamente los archivos *.log almacenados en el logs file
+touch alfa_file				# creates a new empty file called <alfa_file>
+ls -l *file					# invoca todos los files que contengan la palabra <file> como parte de su nombre (alfa_file, beta_file, gamma_file, etc)
+ls -l ?file					# metodo alternativo para consultar archivos que compartan un pattern_string como parte de su titulo
+ls -l [abc]*				# displays the files which initial character is one of those defined within the square_bracket
+ls -l [a-f]					# similarly we can obtain those files which the initial character begins in a range from a to f
+ls -l [!a-f]				# conversely, you can also retrieve those files which the initial character IS-NOT or IS-DIFFERENT from A TO F 
+
+
+
+ps 	-ef	| grep				# ps: lists the current running processes + -ef: displays all proceses + grep: filters + ssh: by ssh
+
+
+#### --help, info, apropos, whatis, man
+pwd --help
+man pwd
+whatis pwd
+apropos pwd
+info pwd
+
+
+
+
+
+
